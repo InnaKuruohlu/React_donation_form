@@ -408,19 +408,7 @@ font-size: 40px !important;
   outline: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .support-button:not(.active):hover {
-    border-color: #8D5A89;
-    color: #8D5A89;
-  }
-}
 
-
-@media (hover: hover) and (pointer: fine) {
-  .container-card:not(.active):hover {
-    background-color: #8D5A89;
-  }
-}
 
 
 
