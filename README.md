@@ -1,16 +1,65 @@
-# React + Vite
+A responsive project and interactive donation form built with React, styled with CSS and enhanced using Material UI icons.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+All UI elements follow the original design and include hover, active and touch interactions for smooth user experience.
 
-Currently, two official plugins are available:
+***
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used:
 
-## React Compiler
+- React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+- CSS / Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Material UI Icons
+
+***
+
+This web application includes several interactive features:
+
+- Adaptive Layout
+
+
+- Interactive UI
+
+All elements visually react to:
+
+hover
+
+focus
+
+active state
+
+touch 
+
+
+- Payment Card Section
+
+The "Фінансова допомога" section includes a card-data form with the following behaviors:
+
+Auto-jump between card inputs
+  
+Each 4-digit card field automatically moves focus to the next input.
+
+Error validation for:  Expiration date (MM/YY)  and CVC/CVV
+
+Visual error indicators
+
+  
+
+- Touch Events Added
+
+Buttons support onTouchEnd events for mobile responsiveness.
+
+***
+
+ Running Locally:
+
+- Install dependencies: npm install
+
+- Run the dev server: npm run dev
+
+***
+
+  Live Demo: https://innakuruohlu.github.io/React_donation_form/
