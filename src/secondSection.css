@@ -58,7 +58,7 @@
   align-items: center;
   margin: auto;
   gap: 20px;
-
+  cursor: pointer;
 }
 
 .support-container p {
@@ -406,6 +406,13 @@ font-size: 40px !important;
 .error {
   border: 2px solid #D9534F;
   outline: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .support-button:not(.active):hover {
+    border-color: #8D5A89;
+    color: #8D5A89;
+  }
 }
 
 @media screen and (min-width: 768px) {
