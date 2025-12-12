@@ -60,4 +60,6 @@ Buttons support onTouchEnd events for mobile responsiveness.
 
 - Run the dev server: npm run dev
 
+***
+
   Live Demo: https://innakuruohlu.github.io/React_donation_form/
