@@ -11,6 +11,27 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 function SecondSection () {
    const [selectedType, setSelectedType] = useState("");
 
+   let touchStartY = 0;
+   let isScrolling = false;
+
+   const handleTouchStart = (e) => {
+    touchStartY = e.touches[0].clientY;
+    isScrolling = false;
+  };
+
+  const handleTouchMove = (e) => {
+    const currentY = e.touches[0].clientY;
+
+    if (Math.abs(currentY - touchStartY) > 10) {
+      isScrolling = true;
+    }
+  };
+
+  const handleContainerClick = (value) => {
+    if (isScrolling) return;
+    setSelectedType(value);
+  };
+
   return <>
   <section className="second-section">
     <div className="main-container-support">
@@ -22,6 +43,8 @@ function SecondSection () {
 
       <div className="container-buttons">
         <div className="support-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
           onClick={() => setSelectedType("make")}
         >
           <button 
@@ -42,6 +65,8 @@ function SecondSection () {
         </div>
 
         <div className="support-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
         onClick={() => setSelectedType("card")}
         >
           <button 
@@ -61,6 +86,8 @@ function SecondSection () {
         </div>
 
         <div className="support-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
         onClick={() => setSelectedType("material")}
         >
           <button 
@@ -80,6 +107,8 @@ function SecondSection () {
         </div>
 
         <div className="support-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
         onClick={() => setSelectedType("volunteer")}
         >
           <button 
