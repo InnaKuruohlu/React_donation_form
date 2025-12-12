@@ -32,7 +32,7 @@ function SecondSection () {
           onClick={() => setSelectedType("make")}
           onTouchEnd={(e) => {
             e.preventDefault();
-            e.stopPropagation();
+           
             setSelectedType("make");}}
           >
           <BackHandIcon className="handIcon" />
@@ -53,7 +53,7 @@ function SecondSection () {
           onClick={() => setSelectedType("card")}
           onTouchEnd={(e) => {
             e.preventDefault();
-            e.stopPropagation();
+           
             setSelectedType("card");
           }}
           >
@@ -75,7 +75,7 @@ function SecondSection () {
           onClick={() => setSelectedType("material")}
           onTouchEnd={(e) => {
             e.preventDefault();
-            e.stopPropagation();
+            
             setSelectedType("material");}}
           >
             <ion-icon name="shirt-outline" className="shirtIcon"></ion-icon>
@@ -96,7 +96,7 @@ function SecondSection () {
           onClick={() => setSelectedType("volunteer")}
           onTouchEnd={(e) => {
             e.preventDefault();
-            e.stopPropagation();
+        
             setSelectedType("volunteer");}}
           >
             <FavoriteBorderIcon className="heartIcon"/>

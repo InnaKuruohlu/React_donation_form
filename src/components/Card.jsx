@@ -55,7 +55,7 @@ function Card({ selectedType }) {
               onClick={() => setSelectedPay("visa")}
               onTouchEnd={(e) => {
                 e.preventDefault();
-                e.stopPropagation();
+         
                 setSelectedPay("visa");}}
               >
               <div className="container-splitmatUI">
@@ -76,7 +76,7 @@ function Card({ selectedType }) {
             onClick={() => setSelectedPay("privat")}
             onTouchEnd={(e) => {
               e.preventDefault();
-              e.stopPropagation();
+              
               setSelectedPay("privat");}}
             >
               <h3>Приват24</h3>
@@ -94,7 +94,7 @@ function Card({ selectedType }) {
               onClick={() => setSelectedPay("terminal")}
               onTouchEnd={(e) => {
                 e.preventDefault();
-                e.stopPropagation();
+               
                 setSelectedPay("terminal");}}
             >
               <span><TerminalIcon className="terminalIcon"/> </span>
@@ -112,7 +112,7 @@ function Card({ selectedType }) {
               onClick={() => setSelectedPay("webmoney")}
               onTouchEnd={(e) => {
                 e.preventDefault();
-                e.stopPropagation();
+              
                 setSelectedPay("webmoney");}}
             >
               <div className="container-splitmatUI">
@@ -133,7 +133,7 @@ function Card({ selectedType }) {
               onClick={() => setSelectedPay("paypal")}
               onTouchEnd={(e) => {
                 e.preventDefault();
-                e.stopPropagation();
+          
                 setSelectedPay("paypal");}}
             >
               <span><ion-icon name="logo-paypal" className="payPallIcon"></ion-icon></span>
