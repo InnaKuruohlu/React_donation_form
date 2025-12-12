@@ -30,10 +30,6 @@ function SecondSection () {
           aria-pressed={selectedType === "make"} 
           aria-label="Зробити"
           onClick={() => setSelectedType("make")}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-           
-            setSelectedType("make");}}
           >
           <BackHandIcon className="handIcon" />
           </button>
@@ -51,11 +47,6 @@ function SecondSection () {
           aria-pressed={selectedType === "card"} 
           aria-label="Фінансова допомога"
           onClick={() => setSelectedType("card")}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-           
-            setSelectedType("card");
-          }}
           >
             <AccountBalanceWalletIcon  className="walletIcon"/>
           </button>
@@ -73,10 +64,6 @@ function SecondSection () {
           aria-pressed={selectedType === "material"} 
           aria-label="Матеріальна допомога"
           onClick={() => setSelectedType("material")}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-            
-            setSelectedType("material");}}
           >
             <ion-icon name="shirt-outline" className="shirtIcon"></ion-icon>
           </button>
@@ -94,10 +81,6 @@ function SecondSection () {
           aria-pressed={selectedType === "volunteer"} 
           aria-label="Волонтерство"
           onClick={() => setSelectedType("volunteer")}
-          onTouchEnd={(e) => {
-            e.preventDefault();
-        
-            setSelectedType("volunteer");}}
           >
             <FavoriteBorderIcon className="heartIcon"/>
           </button>

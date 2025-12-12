@@ -53,10 +53,6 @@ function Card({ selectedType }) {
               aria-label="Карта Visa або MasterCard"
               data-pay="visa"
               onClick={() => setSelectedPay("visa")}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-         
-                setSelectedPay("visa");}}
               >
               <div className="container-splitmatUI">
                 <span></span>
@@ -74,10 +70,6 @@ function Card({ selectedType }) {
             aria-label="Приват24"
             data-pay="privat"
             onClick={() => setSelectedPay("privat")}
-            onTouchEnd={(e) => {
-              e.preventDefault();
-              
-              setSelectedPay("privat");}}
             >
               <h3>Приват24</h3>
               <p>Приват24</p>
@@ -92,10 +84,6 @@ function Card({ selectedType }) {
               aria-label="Tермінал України"
               data-pay="terminal"
               onClick={() => setSelectedPay("terminal")}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-               
-                setSelectedPay("terminal");}}
             >
               <span><TerminalIcon className="terminalIcon"/> </span>
               <p>Термінал України</p>
@@ -110,10 +98,6 @@ function Card({ selectedType }) {
               aria-label="WebMoney"
               data-pay="webmoney"
               onClick={() => setSelectedPay("webmoney")}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-              
-                setSelectedPay("webmoney");}}
             >
               <div className="container-splitmatUI">
                 <p className="webmoneytitle">WebMoney</p>
@@ -131,10 +115,6 @@ function Card({ selectedType }) {
               aria-label="PayPal"
               data-pay="paypal"
               onClick={() => setSelectedPay("paypal")}
-              onTouchEnd={(e) => {
-                e.preventDefault();
-          
-                setSelectedPay("paypal");}}
             >
               <span><ion-icon name="logo-paypal" className="payPallIcon"></ion-icon></span>
               <p>PayPal</p>
