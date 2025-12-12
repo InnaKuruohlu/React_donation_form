@@ -422,6 +422,19 @@ font-size: 40px !important;
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .container-card:not(.active):hover {
+    background-color: #8D5A89;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .container-card:hover {
+    background-color: #D3DEE8;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
   .second-section{
   background-color: #FEFEFE ;
