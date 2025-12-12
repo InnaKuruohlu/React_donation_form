@@ -45,7 +45,7 @@ function SecondSection () {
         <div className="support-container"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-          onClick={() => setSelectedType("make")}
+          onClick={() => handleContainerClick("make")}
         >
           <button 
           className={
@@ -67,7 +67,7 @@ function SecondSection () {
         <div className="support-container"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        onClick={() => setSelectedType("card")}
+        onClick={() => handleContainerClick("card")}
         >
           <button 
           className={
@@ -88,7 +88,7 @@ function SecondSection () {
         <div className="support-container"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        onClick={() => setSelectedType("material")}
+        onClick={() => handleContainerClick("material")}
         >
           <button 
           className={
@@ -109,7 +109,7 @@ function SecondSection () {
         <div className="support-container"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        onClick={() => setSelectedType("volunteer")}
+        onClick={() => handleContainerClick("volunteer")}
         >
           <button 
           className={
