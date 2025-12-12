@@ -415,6 +415,13 @@ font-size: 40px !important;
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .support-button:hover {
+    border-color: #D3DEE8;
+    color: #D3DEE8;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .second-section{
   background-color: #FEFEFE ;
