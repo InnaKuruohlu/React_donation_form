@@ -106,11 +106,14 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: max-height 0.5s ease-out;
+
+  pointer-events: none;
 }
 
 #card.active {
  max-height: 2000px;
-  animation: dropFadeBounce 0.45s ease-out forwards;
+ animation: dropFadeBounce 0.45s ease-out forwards;
+ pointer-events: auto;
 }
 
 @keyframes dropFadeBounce {
