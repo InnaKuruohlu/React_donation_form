@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Gillroy";
+  src: url("./Gilroy-FREE-20251209T162315Z-1-001/Gilroy-FREE/Gilroy-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gillroy";
+  src: url("./Gilroy-FREE-20251209T162315Z-1-001/Gilroy-FREE/Gilroy-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("./Geometria-20251209T162151Z-1-001/Geometria/Geometria-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("./Geometria-20251209T162151Z-1-001/Geometria/Geometria.woff") format("woff");
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Geometria";
+  src: url("./Geometria-20251209T162151Z-1-001/Geometria/Geometria-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("./Geometria-20251209T162151Z-1-001/Geometria/Geometria-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+body {
+ font-family: "Geometria", sans-serif;
+ margin: 0;
+ height: auto;
+}

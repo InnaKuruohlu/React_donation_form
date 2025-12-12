@@ -1,0 +1,559 @@
+.second-section{
+  background-color: #FEFEFE ;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.main-container-support{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.containerForTitles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.titleKindsOfSupports{
+  font-weight: 800;
+  font-size: 32px;
+  color: rgb(63, 68, 103);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.titleHelp{
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
+  font-size: 14px;
+  color: grey;
+}
+
+.container-buttons{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 15px;
+  width: 75%;
+}
+
+.support-container{
+  display: flex;
+  justify-content: flex-start;
+  width: 220px;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+
+}
+
+
+.support-button{
+  width: 70px;
+  height: 72px;
+  border: solid 2px #D3DEE8;
+  color: #D3DEE8;;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.5s ease,
+  color 0.5s ease,
+  border 0.5s ease,
+  border-color 0.5s ease;
+}
+
+.support-button:hover{
+ 
+ border-color: #8D5A89;;
+  color: #8D5A89;
+}
+
+.support-button.active{
+  background: #8D5A89;
+  color: #fff;
+  border: none;
+}
+
+.text-support-button{
+  color: #9FB0C3;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.text-support-button.active{
+  color: rgb(63, 68, 103);
+}
+
+#card{
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.5s ease-out;
+}
+
+#card.active {
+ max-height: 2000px;
+  animation: dropFadeBounce 0.45s ease-out forwards;
+}
+
+@keyframes dropFadeBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.containerOfPaying{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  gap: 30px;
+  border: solid 1px #D3DEE8;
+  border-radius: 15px;
+  position: relative;
+}
+
+.triangle{
+  position: absolute;
+  z-index: 1000;
+  top: -11.1px;
+  left: 30%;
+
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  border: 1px solid #D3DEE8;
+  border-width: 0 1px 1px 0;
+  border-bottom-right-radius: 3px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.containerOptionsOfPaying{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.titlePaying{
+  margin: 0;
+  color: rgb(187, 187, 187);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container-cards{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.container-card{
+  color: #fff;
+  background-color: #D3DEE8;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.container-card:hover{
+  background-color:  #8D5A89;
+}
+
+.container-card.active{
+  background-color:  #8D5A89;
+}
+
+.container-card p,h3{
+margin: 0;
+}
+
+.container-card p{
+  font-size: 12px;
+  font-family: "Gillroy";
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.container-card h3{
+  font-family: "Gillroy";
+  font-weight: 600;
+}
+
+.container-splitmatUI{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-splitmatUI p{
+  margin: 0;
+}
+
+.containerOfData{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.titleOfData{
+  margin: 0;
+  color: rgb(187, 187, 187);
+  font-size: 16px;
+  font-weight: 600;
+}
+.container-dataCard{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  margin-top: 15px;
+  background-color: #D3DEE8;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.containerNumberCard{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+}
+
+.labelDataCard{
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.containerInputCard{
+ display: flex;
+ justify-content: space-between;
+ gap: 10px;
+}
+
+.inputCard{
+width: 78px;
+min-width: 40px;
+max-width: 200px;
+height: 36px;
+background-color: rgb(242, 244, 247);
+color: rgb(63, 68, 103);
+font-family: "Gillroy";
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.inputCard:hover{
+background-color: rgb(230, 237, 248);
+}
+
+.inputCard:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 68, 103, 0.35);
+  background-color: #ffffff;
+}
+
+.containerSecondNumberCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NumberCard{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 10px;
+}
+
+.inputSecondData{
+background-color: rgb(242, 244, 247);
+color: rgb(63, 68, 103);
+font-family: "Gillroy";
+border: none;
+border-radius: 5px;
+width: auto;
+height: 36px;
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.inputSecondData:hover{
+background-color: rgb(230, 237, 248);
+}
+
+.inputSecondData:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 68, 103, 0.35);
+  background-color: #ffffff;
+}
+
+.container-buttonHelp{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ margin-top: 60px;
+}
+
+.buttonHelp{
+  width: 75%;
+  height: 46px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  background: linear-gradient(90deg, #E94B57 0%, #9B5FAF 100%);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(233, 75, 87, 0.9);
+  transition: box-shadow 0.5s ease;
+}
+
+.buttonHelp:hover{
+  box-shadow: 0px 0px 35px rgba(233, 75, 87, 0.9);
+}
+
+/*Material UI*/
+.handIcon{
+font-size: 40px !important;
+}
+
+.walletIcon{
+  font-size: 40px !important;
+}
+
+.shirtIcon{
+  font-size: 40px !important;
+}
+
+.heartIcon{
+  font-size: 40px !important;
+}
+
+.payPallIcon{
+  font-size: 40px !important;
+}
+
+.webmoneytitle{
+  font-size: 16px !important;
+}
+
+.webIcon{
+font-size: 40px !important;
+}
+
+.terminalIcon{
+font-size: 40px !important;
+}
+
+.cerditCardIcon{
+font-size: 40px !important;
+}
+
+.error {
+  border: 2px solid #D9534F;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section{
+  background-color: #FEFEFE ;
+  margin-top: 30px;
+  margin-left: 75px;
+  margin-right: 30px;
+  }
+
+  .titleKindsOfSupports{
+  font-weight: 800;
+  font-size: 42px;
+  }
+  .container-buttons{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 15px;
+  width: 75%;
+}
+
+.support-container{
+  display: flex;
+  justify-content: flex-start;
+  width: 230px;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+.support-button{
+  width: 80px;
+  height: 76px;
+}
+
+.containerOfPaying{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+
+}
+
+.containerOptionsOfPaying{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.containerOfData{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container-cards{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.buttonHelp{
+  width: 20%;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+  .second-section{
+  background-color: #FEFEFE ;
+  margin-top: 40px;
+  margin-left: 110px;
+  margin-right: 40px;
+  }
+
+  .titleKindsOfSupports{
+  font-weight: 800;
+  font-size: 52px;
+  margin-right: 0;
+  }
+
+  .container-buttons{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.support-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.support-button{
+  width: 80px;
+  height: 76px;
+}
+
+.containerOfPaying{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.containerOptionsOfPaying{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.containerOfData{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 20px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container-cards{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.containerNumberCard{
+ margin-bottom: 0;
+}
+
+.buttonHelp{
+  width: 20%;
+}
+
+}
