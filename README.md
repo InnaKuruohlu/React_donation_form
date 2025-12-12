@@ -46,11 +46,9 @@ Error validation for:  Expiration date (MM/YY)  and CVC/CVV
 
 Visual error indicators
 
+
   
-
 - Touch Events Added
-
-Buttons support onTouchEnd events for mobile responsiveness.
 
 ***
 
