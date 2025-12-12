@@ -21,7 +21,9 @@ function SecondSection () {
       </div>
 
       <div className="container-buttons">
-        <div className="support-container">
+        <div className="support-container"
+          onClick={() => setSelectedType("make")}
+        >
           <button 
           className={
             selectedType === "make" ? "support-button active" : "support-button"
@@ -29,7 +31,8 @@ function SecondSection () {
           data-target="make" 
           aria-pressed={selectedType === "make"} 
           aria-label="Зробити"
-          onClick={() => setSelectedType("make")}
+         /* onClick={() => setSelectedType("make")}*/
+          type="button"
           >
           <BackHandIcon className="handIcon" />
           </button>
@@ -38,7 +41,9 @@ function SecondSection () {
           } >Зробити</p>
         </div>
 
-        <div className="support-container">
+        <div className="support-container"
+        onClick={() => setSelectedType("card")}
+        >
           <button 
           className={
             selectedType === "card" ? "support-button active" : "support-button"
@@ -46,7 +51,7 @@ function SecondSection () {
           data-target="card" 
           aria-pressed={selectedType === "card"} 
           aria-label="Фінансова допомога"
-          onClick={() => setSelectedType("card")}
+          /*nClick={() => setSelectedType("card")}*/
           >
             <AccountBalanceWalletIcon  className="walletIcon"/>
           </button>
@@ -55,7 +60,9 @@ function SecondSection () {
           }>Фінансова <br />допомога</p>
         </div>
 
-        <div className="support-container">
+        <div className="support-container"
+        onClick={() => setSelectedType("material")}
+        >
           <button 
           className={
             selectedType === "material" ? "support-button active" : "support-button"  
@@ -63,7 +70,7 @@ function SecondSection () {
           data-target="material" 
           aria-pressed={selectedType === "material"} 
           aria-label="Матеріальна допомога"
-          onClick={() => setSelectedType("material")}
+          /*onClick={() => setSelectedType("material")}*/
           >
             <ion-icon name="shirt-outline" className="shirtIcon"></ion-icon>
           </button>
@@ -72,7 +79,9 @@ function SecondSection () {
           }>Матерільна <br />допомога</p>
         </div>
 
-        <div className="support-container">
+        <div className="support-container"
+        onClick={() => setSelectedType("volunteer")}
+        >
           <button 
           className={
             selectedType === "volunteer" ? "support-button active" : "support-button"
@@ -80,7 +89,7 @@ function SecondSection () {
           data-target="volunteer" 
           aria-pressed={selectedType === "volunteer"} 
           aria-label="Волонтерство"
-          onClick={() => setSelectedType("volunteer")}
+          /*onClick={() => setSelectedType("volunteer")}*/
           >
             <FavoriteBorderIcon className="heartIcon"/>
           </button>
