@@ -6,6 +6,7 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 function Card({ selectedType }) {
  const [selectedPay, setSelectedPay] = useState("");
+
   const card1 = useRef();
   const card2 = useRef();
   const card3 = useRef();
@@ -15,6 +16,30 @@ function Card({ selectedType }) {
  
   const expRef = useRef();
   const cvcRef = useRef();
+
+  let touchStartY = 0;
+  let isScrolling = false;
+
+  const handleTouchStart = (e) => {
+  touchStartY = e.touches[0].clientY;
+  isScrolling = false;
+};
+
+  const handleTouchMove = (e) => {
+  const currentY = e.touches[0].clientY;
+
+  if (Math.abs(currentY - touchStartY) > 10) {
+    isScrolling = true;
+  }
+};
+
+ const handlePayClick = (value) => {
+  if (isScrolling) return;
+  setSelectedPay(value);
+};
+
+
+
 
   function handleAutoJump(e, nextRef) {
   if (e.target.value.length === e.target.maxLength) {
@@ -52,7 +77,9 @@ function Card({ selectedType }) {
               aria-selected={selectedPay === "visa"}
               aria-label="Карта Visa або MasterCard"
               data-pay="visa"
-              onClick={() => setSelectedPay("visa")}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onClick={() => handlePayClick("visa")}
               >
               <div className="container-splitmatUI">
                 <span></span>
@@ -69,7 +96,9 @@ function Card({ selectedType }) {
             aria-selected={selectedPay === "privat"}
             aria-label="Приват24"
             data-pay="privat"
-            onClick={() => setSelectedPay("privat")}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onClick={() => handlePayClick("privat")}
             >
               <h3>Приват24</h3>
               <p>Приват24</p>
@@ -83,7 +112,9 @@ function Card({ selectedType }) {
               aria-selected={selectedPay === "terminal"}
               aria-label="Tермінал України"
               data-pay="terminal"
-              onClick={() => setSelectedPay("terminal")}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onClick={() => handlePayClick("terminal")}
             >
               <span><TerminalIcon className="terminalIcon"/> </span>
               <p>Термінал України</p>
@@ -97,7 +128,9 @@ function Card({ selectedType }) {
               aria-selected={selectedPay === "webmoney"}
               aria-label="WebMoney"
               data-pay="webmoney"
-              onClick={() => setSelectedPay("webmoney")}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onClick={() => handlePayClick("webmoney")}
             >
               <div className="container-splitmatUI">
                 <p className="webmoneytitle">WebMoney</p>
@@ -114,7 +147,9 @@ function Card({ selectedType }) {
               aria-selected={selectedPay === "paypal"}
               aria-label="PayPal"
               data-pay="paypal"
-              onClick={() => setSelectedPay("paypal")}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onClick={() => handlePayClick("paypal")}
             >
               <span><ion-icon name="logo-paypal" className="payPallIcon"></ion-icon></span>
               <p>PayPal</p>
